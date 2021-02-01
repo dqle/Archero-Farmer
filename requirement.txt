@@ -1,0 +1,6 @@
+pip install tesseract
+pip install opencv
+pip install pillow
+
+#install tesseract 64 bit binary
+https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20201127.exe
