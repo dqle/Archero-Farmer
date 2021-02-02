@@ -1,0 +1,17 @@
+ Coordinate List - Update this if the game changes UI Layout - Use for reference
+
+ (389,38,135,46) = Energy Bar
+ (735,340,927,425) = The word "ability" for first skill selection when joined a stage
+ (585,339,896,429) = The word "adventure" when level up past initial level up
+ (360,170,720,270) = The word "Lucky" for Lucky Wheel!
+ (615,195,785,245) = The word "Master" for Master
+ (265,170,830,270) = Angel Region
+ (440,610,650,750) = Door Location
+ (940,655,1070,790) = Stage 6 Region to check for Unique End of Floor ID
+ (12,930,1045,1320) = Stage 6 Region to check for Unique Start of floor ID
+ (90, 1820) = Exit Met a Master and Mysterious Vendor
+ (545, 1515) = Start Wheel Button
+ (525, 1425) = Start Stage Button
+ (215, 1280) = Left Skill to press
+ (535, 1280) = Middle Skill to Press
+ (875, 1280) = Right Skill to press
