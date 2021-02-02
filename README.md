@@ -2,7 +2,7 @@
 
 ![Archero Farmer Icon](https://github.com/dqle/Archero-Farmer/blob/master/repo_images/archero-farmer.png)
 
-Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to continuously start a stage and play it based on available energy. The bot is based on Python and is using Tesseract OCR and OpenCV to achieve this.
+Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to continuously start a stage and play it based on available energy. The bot is based on Python and is using OpenCV to achieve this.
 
 - Supported Emulator Settings
     - NOX Emulator Version 7.0.0.8 
