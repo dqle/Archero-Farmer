@@ -9,7 +9,7 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
         - Resolution: Mobile Phone Resolution 1080 x 1920
         - Performance: High (4 Core CPU, 4096 MB Memory)
   
-- Supported Level
+- Supported Stage
     - 6\. Cave of Bones : Tested running for 24 hours - ALL PASSED
   
 - Equipment
@@ -43,7 +43,7 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
 ## Usage
 
 - Download the latest release build on the release page: https://github.com/dqle/Archero-Farmer/releases
-- Select level on the main menu and then run **Archero-Farmer.py** to start the bot
+- Select stage on the main menu and then run **Archero-Farmer.py** to start the bot
 - Fill out the survey prompted on the bot
 ![Survey](https://github.com/dqle/Archero-Farmer/blob/master/repo_images/program-output-1.PNG)
 
