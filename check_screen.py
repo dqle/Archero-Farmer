@@ -71,6 +71,32 @@ def what_screen(stage,device):
         pass
 
     #Stage Specific 
+    elif stage == 3 and \
+        (crop_and_compare_image("images/stage3_unique_start1.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start2.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start3.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start4.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start5.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start6.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start7.png", "tmp/check_start.png",0,800,1080,1300) or \
+         crop_and_compare_image("images/stage3_unique_start8.png", "tmp/check_start.png",0,800,1080,1300)):
+        print("New Floor")
+        status = "NewFloor"
+        pass
+
+    elif stage == 3 and crop_and_compare_image("images/stage3_door.png", "tmp/check_door.png",220,580,880,1065):
+        print("Door (Stage 3) is not open - Auto-Attacking")
+        status = "Auto-Attack"
+        pass
+
+    elif stage == 3 and not crop_and_compare_image("images/stage3_door.png", "tmp/check_door.png",8,288,1073,1137) and \
+         (crop_and_compare_image("images/stage3_unique_end1.png", "tmp/check_stage3end.png",8,288,1073,1137) or \
+          crop_and_compare_image("images/stage3_unique_end2.png", "tmp/check_stage3end.png",8,288,1073,1137) or \
+          crop_and_compare_image("images/stage3_unique_end3.png", "tmp/check_stage3end.png",8,288,1073,1137)):
+        print("Door (Stage 3) is open")
+        status = "MoveNextStage"
+        pass
+
     elif stage == 6 and \
          (crop_and_compare_image("images/stage6_unique_start1.png", "tmp/check_start.png",12,930,1045,1820) or \
           crop_and_compare_image("images/stage6_unique_start2.png", "tmp/check_start.png",12,930,1045,1820) or \

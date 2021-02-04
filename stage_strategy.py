@@ -1,7 +1,35 @@
 from ppadb.client import Client
 
 def move_strategy(stage,device):
-    if stage == 6:
+    if stage == 3:
+        print ('Move Up for 1.6s')
+        device.shell("input swipe 530 1635 530 1212 1600") 
+        print ('Move Left for 0.32s')
+        device.shell("input swipe 530 1635 100 1635 320")
+        print ('Move Up for 0.5s')
+        device.shell("input swipe 530 1635 530 1212 500")  
+        print ('Move Right for 0.32')
+        device.shell("input swipe 530 1635 920 1635 320") 
+        print ('Move Up for 0.9s')
+        device.shell("input swipe 530 1635 530 1212 900")
+        print ('Move Right for 1.0s')
+        device.shell("input swipe 530 1635 920 1635 1000") 
+        print ('Move Up for 2s')
+        device.shell("input swipe 530 1635 530 1212 2000")
+        print ('Move Left for 0.5s')
+        device.shell("input swipe 530 1635 100 1635 500")
+        print ('Move Down for 1.0s')
+        device.shell("input swipe 530 1600 530 1900 1000")
+        print ('Move Left for 0.5s')
+        device.shell("input swipe 530 1635 100 1635 500")
+        print ('Move Up for 1.0s')
+        device.shell("input swipe 530 1635 530 1212 1000")
+        print ('Move Right for 0.6s')
+        device.shell("input swipe 530 1635 920 1635 600") 
+        print ('Move Up for 1.0s')
+        device.shell("input swipe 530 1635 530 1212 1000")
+
+    elif stage == 6:
         print ('Move Up for 1.5s')
         device.shell("input swipe 530 1635 530 1212 1500") 
         print ('Move Left for 0.32s')

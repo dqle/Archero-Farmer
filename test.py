@@ -100,10 +100,37 @@ def move_strategy2(stage,device):
         device.shell("input swipe 530 1635 100 1635 320")  
         print ('Move Up for 1.5s')
         device.shell("input swipe 530 1635 530 1212 1500")  
-        print ('Move Right for 0.64s')
+        print ('Move Right for 0.32s')
         device.shell("input swipe 530 1635 920 1635 320") 
         print ('Move Up for 2.0s')
         device.shell("input swipe 530 1635 530 1212 2000")
+    elif stage == 3:
+        print ('Move Up for 1.6s')
+        device.shell("input swipe 530 1635 530 1212 1600") 
+        print ('Move Left for 0.32s')
+        device.shell("input swipe 530 1635 100 1635 320")
+        print ('Move Up for 0.5s')
+        device.shell("input swipe 530 1635 530 1212 500")  
+        print ('Move Right for 0.32')
+        device.shell("input swipe 530 1635 920 1635 320") 
+        print ('Move Up for 0.9s')
+        device.shell("input swipe 530 1635 530 1212 900")
+        print ('Move Right for 1.0s')
+        device.shell("input swipe 530 1635 920 1635 1000") 
+        print ('Move Up for 2s')
+        device.shell("input swipe 530 1635 530 1212 2000")
+        print ('Move Left for 0.5s')
+        device.shell("input swipe 530 1635 100 1635 500")
+        print ('Move Down for 1.0s')
+        device.shell("input swipe 530 1600 530 1900 1000")
+        print ('Move Left for 0.5s')
+        device.shell("input swipe 530 1635 100 1635 500")
+        print ('Move Up for 1.0s')
+        device.shell("input swipe 530 1635 530 1212 1000")
+        print ('Move Right for 0.5s')
+        device.shell("input swipe 530 1635 920 1635 500") 
+        print ('Move Up for 1.0s')
+        device.shell("input swipe 530 1635 530 1212 1000")
 
 def get_energy():
     main_screen = Image.open("images/main_screen.png")
@@ -119,7 +146,7 @@ def get_energy():
 device = connect_device()
 
 #Get Current Screen
-#take_screenshot(device)
+take_screenshot(device)
 
 
 #Crop
@@ -128,7 +155,14 @@ device = connect_device()
 #boo, value = crop_and_compare_image("images/new_skill.png", "tmp/check_newskill.png",325,330,750,430)
 #print(value)
 
-move_strategy2(6,device)
+#move_strategy2(3,device)
+device.shell("input tap 60 60")
+time.sleep(1)
+device.shell("input tap 540 1730")
+time.sleep(1)
+device.shell("input tap 765 1150")
+time.sleep(5)
+
 
 #Get Text
 #text = get_text("images/ability.png")

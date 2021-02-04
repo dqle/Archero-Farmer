@@ -10,7 +10,8 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
         - Performance: High (4 Core CPU, 4096 MB Memory)
   
 - Supported Level
-    - 6\. Cave of Bones : Tested running for 24 hours - ALL PASSED
+    - 3\. Abandoned Dungeon: Tested running for 24 hours - NOT STABLE - 19/20 completion rate
+    - 6\. Cave of Bones : Tested running for 24 hours - STABLE - 20/20 completion
   
 - Equipment
     - Does **NOT** support **Enlightenment** book
@@ -39,6 +40,13 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
     - Type WIN + R to bring up the Run command and put in **SystemPropertiesAdvanced**
     - Click on **Environment Variables**
         - Under **System Variables** list > Find **Path** > Click on it and click **Edit** > Click **New** on the **Edit environment variable** windows > Put in **C:\platform-tools** > OK > OK
+- Install NOX:
+    - Download here: https://www.bignox.com/
+        - Version 7.0.0.8 Direct Link: https://drive.google.com/file/d/1RKVNUsXVZFTZI-SJP8CZvLZcDqU2Ujzz/view
+    - Settings:
+        - Resolution Type: Mobile Phone 
+        - Resolution: 1080 x 1920
+        - Performance: High (4 Core CPU, 4096 MB Memory)
 
 ## Usage
 
