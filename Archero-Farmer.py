@@ -71,6 +71,7 @@ while True:
             device.shell("input swipe 530 1635 530 1212 4000")
         else:
             device.shell("input swipe 530 1635 530 1212 4000")
+        time.sleep(3)
         current_floor += 1
 
     elif current_status == "LuckyWheel":
@@ -125,13 +126,13 @@ while True:
         time.sleep(5)
         if nextStage == 0:
             #move up - right
-            device.shell("input swipe 530 1635 950 1300 1000")
+            device.shell("input swipe 530 1635 950 1300 3000")
             nextStage = 1
         else:
             #move up - left
-            device.shell("input swipe 530 1635 35 1300 1000")
+            device.shell("input swipe 530 1635 35 1300 3000")
             nextStage = 0
-        time.sleep(1)
+        time.sleep(3)
 
     elif current_status == "Auto-Attack":
         time.sleep(5)
@@ -149,7 +150,7 @@ while True:
         elif unknown_state == 10:
             print("Unknown State. Try Moving Up 2.0s.")
             device.shell("input swipe 530 1635 530 1212 2000")
-            unknown_state = 0
+            unknown_state += 1
             time.sleep(2)
         else:
             print("Hard Stuck. Returning to Menu")
@@ -159,3 +160,4 @@ while True:
             time.sleep(1)
             device.shell("input tap 765 1150")
             time.sleep(5)
+            unknown_state = 0

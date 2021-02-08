@@ -98,8 +98,8 @@ def move_strategy2(stage,device):
         device.shell("input swipe 530 1635 530 1212 1500") 
         print ('Move Left for 0.32s')
         device.shell("input swipe 530 1635 100 1635 320")  
-        print ('Move Up for 1.5s')
-        device.shell("input swipe 530 1635 530 1212 1500")  
+        print ('Move Up for 2.0s')
+        device.shell("input swipe 530 1635 530 1212 2000")  
         print ('Move Right for 0.32s')
         device.shell("input swipe 530 1635 920 1635 320") 
         print ('Move Up for 2.0s')
@@ -152,17 +152,10 @@ take_screenshot(device)
 #Crop
 #crop_image("images/main_screen.png","images/ability.png",640,800,850,885)
 
-#boo, value = crop_and_compare_image("images/new_skill.png", "tmp/check_newskill.png",325,330,750,430)
+#boo, value = crop_and_compare_image("images/stage6_unique_end3.png", "tmp/check_stage6end.png",527,300,780,860)
 #print(value)
 
-#move_strategy2(3,device)
-device.shell("input tap 60 60")
-time.sleep(1)
-device.shell("input tap 540 1730")
-time.sleep(1)
-device.shell("input tap 765 1150")
-time.sleep(5)
-
+move_strategy2(6,device)
 
 #Get Text
 #text = get_text("images/ability.png")
