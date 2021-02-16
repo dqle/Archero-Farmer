@@ -107,6 +107,7 @@ while True:
         time.sleep(2)
         device.shell("input tap 90 1820")
         device.shell("input tap 535 1280")
+        device.shell("input tap 545 1515")
         time.sleep(1)
         device.shell("input swipe 530 1635 530 1212 2000")
         time.sleep(3)
