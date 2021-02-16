@@ -33,7 +33,7 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
     - When installing, select **Add to PATH**
 - Install Python Package:
     - Open a Command Line (CMD) and copy paste below:
-      > pip install opencv pillow numpy pure-python-adb
+      > pip install opencv-python pillow numpy pure-python-adb
     - If this doesn't work, you need to reinstall python and select **Add to PATH** option during installation
 - Install ADB:
     - Download here: https://developer.android.com/studio/releases/platform-tools
