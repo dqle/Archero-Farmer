@@ -50,6 +50,8 @@ Archero-Farmer is an Archero bot that work on NOX emulator. Its function is to c
         - Resolution Type: Mobile Phone 
         - Resolution: 1080 x 1920
         - Performance: High (4 Core CPU, 4096 MB Memory)
+    - Archero Settings:
+        - Graphics: High
 
 ## Usage
 
